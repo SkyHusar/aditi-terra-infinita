@@ -141,3 +141,7 @@ footer.public-footer{display:flex;flex-direction:column;justify-content:center;a
 @media(max-width:1300px){.mission-grid{grid-template-columns:1fr 1fr}.story-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){.mission-grid,.story-cards,.support-grid{grid-template-columns:1fr}.gift-section{padding-top:68px;margin-top:40px}.hero{padding-top:45px;min-height:370px}.hero-headline{font-size:clamp(38px,6vw,64px)}}
 @media(max-width:560px){.hero-headline{font-size:39px}.hero-controls{gap:6px}.section-title{font-size:32px}.story-cards article,.mission-box{padding:20px}.section-lead{font-size:13px}.support-section{padding:20px}.support-card{padding:17px}.letter-paper p{line-height:1.8}}
+
+/* Hidden-in-plain-sight cinematic gift finale. */
+.surprise-link{display:inline-flex;align-items:center;justify-content:center;color:#ffebfd!important;border-color:#bc83f0!important;background:linear-gradient(105deg,#533888,#174c4b)!important;text-decoration:none;box-shadow:0 0 22px #6f4fed29}
+.surprise-link:hover{filter:brightness(1.13)}
