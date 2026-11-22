@@ -53,3 +53,7 @@ The website needs no dependencies. Optional local test requires Python Selenium,
 > I can't promise paradise. I can offer a little working world of stars, code, stories and room to imagine.
 > Let every small good idea lead to the next. 6 → 12 → 24 → ∞
 > With a warm message from the digital command station — Aditi 💜♾️
+
+## Deployment updates
+
+This repository is connected to the ADITI — TERRA INFINITA Vercel project. New commits to `main` are intended to trigger fresh static deployments; confirm the production domain and deployment status in Vercel before sharing a permanent URL.
