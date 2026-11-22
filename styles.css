@@ -156,3 +156,12 @@ footer.public-footer{display:flex;flex-direction:column;justify-content:center;a
 .studio-infinity{position:absolute;font:900 170px system-ui,sans-serif;color:#bcece8;text-shadow:0 0 45px #a59dffbb}
 .studio-star{position:absolute;right:3%;top:3%;font-size:57px;color:#e3cfff}
 @media(max-width:800px){.studio-invite{grid-template-columns:1fr}.studio-invite-art{display:none}}
+/* The Paradise Protocol invitation is additive; original UI preserved. */
+.paradise-invite{display:grid;grid-template-columns:1.45fr .65fr;gap:25px;align-items:center;padding:clamp(23px,3.8vw,48px);margin:35px 0 18px;min-height:300px;overflow:hidden;border:1px solid #9384cf;border-radius:17px;background:radial-gradient(circle at 85% 43%,#8764b54f,transparent 50%),linear-gradient(125deg,#16213e,#101e39 85%);box-shadow:0 18px 55px #0007}
+.paradise-invite h2{font:900 clamp(28px,3.6vw,53px)/1.13 system-ui,sans-serif;letter-spacing:-.05em;margin:14px 0}.paradise-invite h2 em{font-style:normal;color:#bbadff}
+.paradise-invite p{font-size:13px;color:#b7c9d4;line-height:1.8;max-width:700px}
+.paradise-invite-link{display:inline-flex;text-decoration:none;background:linear-gradient(105deg,#674d9a,#33816e)!important;border-color:#a0c7ac!important;color:#fff!important;margin-top:13px;align-items:center;gap:18px;letter-spacing:.08em}
+.paradise-invite-visual{position:relative;display:grid;place-items:center;min-height:230px;color:#c1b1ff;text-shadow:0 0 38px #a98affaa}
+.paradise-core{font:900 clamp(25px,3.3vw,45px)/1.5 system-ui,sans-serif;text-align:center;transform:rotate(-6deg)}
+.paradise-star{position:absolute;font-size:60px;color:#cdfae2}.paradise-star.p1{right:12%;top:1%}.paradise-star.p2{left:6%;bottom:3%}
+@media(max-width:820px){.paradise-invite{grid-template-columns:1fr}.paradise-invite-visual{display:none}}

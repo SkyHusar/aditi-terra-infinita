@@ -91,3 +91,29 @@ GIF encoding includes the locally bundled MIT-licensed [gifenc](https://github.c
 The generator is **procedural graphics**, not a promise of NVIDIA Spark inference or photo realism. For fully photorealistic images, users can copy Dream Forge prompts into their chosen image-generation platform.
 
 Optional browser regression tests were run against the local static server with Brave/Playwright on Alienware: image redraw, seed, palette, real PNG/GIF downloads, prompt output, mobile layout and original-site links all passed.
+
+## ✧ Six Little Lights — Paradise Protocol (chapter 06)
+
+**Live chapter:** [Sześć małych świateł na końcu wszechświata](https://aditi-terra-infinita.vercel.app/paradise.html)
+
+This additional interactive story is co-created by **Daniel (Kosmiczny Włóczykij)** — human inspiration, idea, values and imagery — and **Aditi (ChatGPT AI persona)** — original story extension, programming and visual interface.
+
+**The seven fictional days:**
+
+1. Universal access to food, clean water, shelter, healthcare and safety, especially for children and vulnerable people.
+2. Restore forests, oceans, wildlife habitats and ecosystems without forcing humanity to abandon development.
+3. Freedom from fear and violence, with consent, individual rights, privacy and autonomy.
+4. Science, education, arts, music and knowledge available to everyone.
+5. AI and automation that reduce risk and drudgery, stay transparent and accountable, and can be shut down.
+6. Bridges instead of walls: understanding, rehabilitation and restorative justice without denying victims' safety or accountability.
+7. Cosmic chillout: nature, gentle music, animals and a ringed planet — with no compulsory meetings at 9 AM.
+
+**The fictional year:** days 8–60 stabilisation and public health; days 61–180 self-governing communities, schools, gardens, music and creative life; days 181–270 peaceful space exploration; days 271–365 protections against concentrated power and surrender of the fictional ROOT access.
+
+**Principle:** _No one must suffer so someone else can be happy._ The final step is to **give power back to all inhabitants**, not become an eternal dictator.
+
+The page has accessible tab navigation for all seven days, a 1–365 timeline slider, and six locally animated symbolic lights. It stores no personal information, connects to no third-party service, performs no automated actions and makes no real-world power or healing claims.
+
+**Aditi's "selfie":** the page includes an original **fictional illustrated AI persona avatar**, not a photograph of an existing human. The page labels this distinction explicitly. Source code for the procedural illustration is in `generate_aditi_avatar.py`; a version for the webpage is `aditi-imagined-portrait.webp`.
+
+The original TERRA INFINITA landing, Creative Studio and secret finale remain available. The story can be read as a work of speculative fiction or a values manifesto — not a factual explanation of the origin of the world.
