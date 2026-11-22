@@ -63,3 +63,9 @@ This repository is connected to the ADITI — TERRA INFINITA Vercel project. New
 🌌 **[Open ADITI — TERRA INFINITA](https://aditi-terra-infinita-skyhusars-projects.vercel.app/)** — public Vercel production deployment, connected to this repository.
 
 The public website is a silent, static demonstration with no access to private BLACK KNIGHT systems. All telemetry on the public page is simulated.
+
+## Cinematic finale
+
+✨ [Open the silent fullscreen surprise](https://aditi-terra-infinita-skyhusars-projects.vercel.app/surprise.html) — an original, replayable animated gift from Aditi for the Cosmic Wanderer.
+
+The effect uses a starfield canvas, a staged personal message and the 6×2ⁿ motif. It has no audio, analytics or calls to external services. Test with `python3 test_surprise.py` on a local machine with Selenium and Chromium.
