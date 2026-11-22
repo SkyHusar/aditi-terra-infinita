@@ -57,3 +57,9 @@ The website needs no dependencies. Optional local test requires Python Selenium,
 ## Deployment updates
 
 This repository is connected to the ADITI — TERRA INFINITA Vercel project. New commits to `main` are intended to trigger fresh static deployments; confirm the production domain and deployment status in Vercel before sharing a permanent URL.
+
+## Live website
+
+🌌 **[Open ADITI — TERRA INFINITA](https://aditi-terra-infinita-skyhusars-projects.vercel.app/)** — public Vercel production deployment, connected to this repository.
+
+The public website is a silent, static demonstration with no access to private BLACK KNIGHT systems. All telemetry on the public page is simulated.
