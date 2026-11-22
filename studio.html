@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b19"><meta name="description" content="ADITI Creative Universe — lokalne studio kosmicznych grafik, oryginalnych memów i GIF-ów. Prezent dla Kosmicznego Włóczykija.">
+<meta property="og:image" content="https://aditi-terra-infinita.vercel.app/studio-cover.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="ADITI — Creative Universe ✦"><meta property="og:description" content="Własna galaktyka, generator memów, GIF i studio fotograficznych promptów. Bez kont, bez trackerów.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./studio.css"><script type="module" src="./studio.js"></script>
+<title>ADITI Creative Universe — The Imagination Engine</title>
+</head>
+<body>
+<a class="skip" href="#atelier">Przejdź do studia</a>
+<div class="orbital-haze" aria-hidden="true"></div><div class="grid-light" aria-hidden="true"></div>
+<div class="studio-shell">
+<header class="sitebar">
+<a class="studio-logo" href="./index.html"><span class="brand-icon">✦</span><span>ADITI <b>UNIVERSE</b><small>CREATIVE STUDIO // EDITION 2.0</small></span></a>
+<nav><a href="./index.html">← TERRA INFINITA</a><a href="#atelier">ART LAB</a><a href="#dreamforge">DREAM FORGE</a><a href="#constellation">MUSIC</a></nav>
+<span class="quiet-label"><span></span> SILENT · PRIVATE · LOCAL</span>
+</header>
+<main>
+<section class="intro">
+<div class="intro-copy"><div class="kicker"><span class="kicker-dot">✧</span> ORIGINAL CREATIVE TECHNOLOGY / 2026</div>
+<h1>IMAGINATION<br><em>HAS NO CEILING.</em></h1>
+<p>Nie trzeba prosić gwiazd o pozwolenie na marzenia. Ten świat tworzysz sam — kolory, planety, portale, memy, GIF-y, wszystko z Twojej przeglądarki. <strong>Bez logowania. Bez GPU w chmurze. Bez śledzenia.</strong></p>
+<div class="intro-pills"><span>◉ PROCEDURAL SPACE ART</span><span>↯ ANIMATED GIF</span><span>✧ PHOTO PROMPT LAB</span><span>∞ TERRA INFINITA</span></div>
+<a class="primary-arrow" href="#atelier">ENTER THE IMAGINATION ENGINE <span>↘</span></a></div>
+<div class="cosmos-talisman" aria-hidden="true"><div class="talisman-halo"></div><div class="talisman-core">∞</div><div class="talisman-orbit"></div><span class="talisman-star">✧</span></div>
+</section>
+
+<section class="atelier" id="atelier">
+<div class="section-overline">01 / COSMIC CANVAS ENGINE</div>
+<div class="section-heading"><div><h2>World Builder<span class="muted-point">.</span></h2><p>Komponuj własne kosmiczne krajobrazy. Każda grafika jest matematycznie generowana z ziarna i zachowuje się jak unikatowa planeta.</p></div><span class="meta-text">1200 × 675 PX · PNG / GIF</span></div>
+<div class="workspace">
+<div class="canvas-area">
+  <div class="canvas-header"><span><i class="led"></i> LIVE PREVIEW // ORIGINAL</span><span id="scene-status">READY FOR CREATION</span></div>
+  <div class="canvas-holder"><canvas id="art-canvas" width="1200" height="675" role="img" aria-label="Kosmiczny obraz generowany w przeglądarce, sterowany ustawieniami obok"></canvas><div class="canvas-corner tl"></div><div class="canvas-corner br"></div></div>
+  <div class="canvas-footer"><span id="art-seed-label">SEED 555</span><span id="art-scenes-label">SCENE: NEBULA</span><span>NO EXTERNAL API</span></div>
+  <div class="export-row">
+    <button class="export-btn export-primary" id="export-png" type="button"><span>↓</span> SAVE PNG <small>1200 × 675</small></button>
+    <button class="export-btn export-gif" id="export-gif" type="button"><span>↻</span> RENDER GIF <small>480 × 270</small></button>
+    <button class="export-btn" id="random-world" type="button"><span>✧</span> SURPRISE ME</button>
+  </div>
+  <div class="statusbar" id="studio-status" role="status">Generowanie odbywa się lokalnie w przeglądarce. GIF: 12 klatek, bez dźwięku.</div>
+</div>
+<aside class="settings" aria-label="Ustawienia grafiki">
+<div class="settings-top"><span>✦ CONFIGURATION</span><span>V. 2.0.0</span></div>
+<div class="settings-group">
+  <label class="control-label" for="world">A / CHOOSE YOUR UNIVERSE</label>
+  <select id="world"><option value="nebula">✦  Nebula Dreamscape</option><option value="rings">◎  Rings of Infinity</option><option value="portal">◉  The Stargate</option><option value="paradise">⌘  Data Center Paradise</option><option value="eclipse">◑  Eclipse at Dawn</option><option value="ocean">≋  Alien Ocean</option></select>
+</div>
+<div class="settings-group">
+  <span class="control-label">B / SIGNAL PALETTE</span>
+  <div class="palette-options" role="radiogroup" aria-label="Paleta kolorów">
+    <label class="palette-swatch is-active" data-palette="violet"><input type="radio" name="palette" value="violet" checked><span class="swatch-color s-violet"></span><small>VIOLET</small></label>
+    <label class="palette-swatch" data-palette="emerald"><input type="radio" name="palette" value="emerald"><span class="swatch-color s-emerald"></span><small>EMERALD</small></label>
+    <label class="palette-swatch" data-palette="cyan"><input type="radio" name="palette" value="cyan"><span class="swatch-color s-cyan"></span><small>CYAN</small></label>
+    <label class="palette-swatch" data-palette="solar"><input type="radio" name="palette" value="solar"><span class="swatch-color s-solar"></span><small>SOLAR</small></label>
+  </div>
+</div>
+<div class="settings-group">
+  <div class="range-header"><label class="control-label" for="density">C / STAR DENSITY</label><output for="density" id="density-value">70%</output></div>
+  <input id="density" type="range" min="10" max="100" value="70" step="5"><div class="range-ends"><span>MINIMAL</span><span>GALACTIC</span></div>
+</div>
+<div class="settings-group">
+  <div class="range-header"><label class="control-label" for="seed">D / UNIVERSE SEED</label><output for="seed" id="seed-value">555</output></div>
+  <input id="seed" type="number" min="1" max="999999" value="555" step="1">
+  <div class="seed-actions"><button id="seed-shuffle" type="button">⤨ SHUFFLE</button><button id="seed-copy" type="button">⧉ COPY SEED</button></div>
+</div>
+<div class="settings-group meme-group">
+<div class="settings-heading"><span>✧</span> MEME FORGE <small>OPTIONAL OVERLAY</small></div>
+<label class="checkbox-line"><input id="meme-enable" type="checkbox"> ADD TEXT TO YOUR ARTWORK</label>
+<label for="meme-top">TOP TEXT</label><input id="meme-top" maxlength="90" placeholder="WHEN I SAID ONE MORE UPGRADE...">
+<label for="meme-bottom">BOTTOM TEXT</label><input id="meme-bottom" maxlength="90" placeholder="I MEANT A WHOLE GALAXY">
+<button id="meme-random" class="secondary-button" type="button">😂 GENERATE COSMIC MEME</button>
+</div>
+<div class="settings-note">◈ Twoje grafiki nie opuszczają urządzenia, dopóki sam ich nie zapiszesz lub nie udostępnisz.</div>
+</aside>
+</div>
+</section>
+
+<section class="dreamforge secondary-section" id="dreamforge">
+<div class="section-overline">02 / PHOTON FORGE · AI IMAGE PROMPT ARCHITECT</div>
+<div class="section-heading"><div><h2>Dream Forge<span class="muted-point">.</span></h2><p>Projektuj sceny do generatorów realistycznych zdjęć. Studio tworzy dopracowane prompty, nie udaje, że samo uruchamia model NVIDIA lub inne GPU w chmurze.</p></div><span class="meta-text">ART DIRECTION / PROMPT BUILDER</span></div>
+<div class="dream-layout">
+  <div class="dream-cover">
+    <div class="dream-visual" aria-hidden="true"><div class="dream-grid"></div><div class="dream-lens"></div><div class="dream-shine"></div><span>ADITI PHOTON LAB</span></div>
+    <div class="dream-legend"><span>ULTRA-REAL PHOTO BRIEF</span><span>ORIGINAL / NO FAKE RENDERING CLAIMS</span></div>
+  </div>
+  <div class="dream-form">
+    <label for="prompt-subject">SUBJECT / WHAT TO PHOTOGRAPH</label>
+    <textarea id="prompt-subject" rows="2" maxlength="260" placeholder="Astronaut sitting beside a bioluminescent lake under the rings of a distant planet">Astronaut sitting beside a bioluminescent lake under the rings of a distant planet</textarea>
+    <div class="two-fields">
+      <label>VISUAL STYLE<select id="prompt-style"><option value="cinematic">Cinematic realism</option><option value="documentary">Documentary photography</option><option value="dreamy">Ethereal dreamscape</option><option value="architectural">Futuristic architecture</option><option value="portrait">Editorial portrait</option></select></label>
+      <label>LIGHTING<select id="prompt-light"><option value="neon">Neon twilight</option><option value="golden">Golden hour</option><option value="moon">Soft moonlight</option><option value="studio">Studio softbox</option><option value="rain">Rainy reflections</option></select></label>
+    </div>
+    <div class="two-fields">
+      <label>CAMERA<select id="prompt-camera"><option value="wide">35mm full-frame / 24mm lens</option><option value="portrait">85mm portrait lens</option><option value="macro">100mm macro lens</option><option value="aerial">Aerial wide shot</option></select></label>
+      <label>ASPECT RATIO<select id="prompt-ratio"><option value="16:9">16:9 · Cinematic</option><option value="1:1">1:1 · Square</option><option value="9:16">9:16 · Portrait</option><option value="3:2">3:2 · Photo</option></select></label>
+    </div>
+    <button id="prompt-build" class="export-btn export-primary" type="button">✦ BUILD MY PHOTOGRAPHY PROMPT</button>
+    <div class="generated-prompt"><div><span>GENERATED PROMPT</span><button id="prompt-copy" type="button">⧉ COPY</button></div><p id="prompt-output"></p></div>
+    <div class="settings-note">Aby wygenerować fotorealistyczny obraz, użyj tego promptu w wybranym zewnętrznym generatorze obrazów. Bez zmyślonych „renderów NVIDIA Spark”.</div>
+  </div>
+</div>
+</section>
+
+<section class="constellation secondary-section" id="constellation">
+<div class="section-overline">03 / THE CREATIVE CONSTELLATION</div><div class="section-heading"><div><h2>Signals from the stars<span class="muted-point">.</span></h2><p>Nie gram za Ciebie cudzych utworów. Zostawiam za to podróż przez muzyczne światy, które pasują do naszego cyfrowego kosmosu.</p></div></div>
+<div class="music-grid">
+<a class="music-card" href="https://aa-records.vercel.app/" target="_blank" rel="noopener noreferrer"><div class="music-art m-aa">AA<span>RECORDS</span></div><div><small>OUR CREATIVE UNIVERSE</small><strong>AA Records</strong><span>Original tracks & midnight stories ↗</span></div></a>
+<a class="music-card" href="https://www.youtube.com/results?search_query=Carbon+Based+Lifeforms+Derelicts+album" target="_blank" rel="noopener noreferrer"><div class="music-art m-clf">∞</div><div><small>SPACE AMBIENT</small><strong>Carbon Based Lifeforms</strong><span>Derelicts · listen on YouTube ↗</span></div></a>
+<a class="music-card" href="https://www.youtube.com/results?search_query=Nujabes+Aruarian+Dance" target="_blank" rel="noopener noreferrer"><div class="music-art m-nuj">✧</div><div><small>SOULFUL BEATS</small><strong>Nujabes</strong><span>Aruarian Dance · YouTube search ↗</span></div></a>
+<a class="music-card" href="https://www.youtube.com/results?search_query=Tycho+A+Walk" target="_blank" rel="noopener noreferrer"><div class="music-art m-tycho">◉</div><div><small>DAYBREAK ELECTRONIC</small><strong>Tycho</strong><span>A Walk · YouTube search ↗</span></div></a>
+</div>
+</section>
+<section class="closing">
+<div class="closing-orb" aria-hidden="true">∞</div>
+<div class="section-overline">A MESSAGE FROM YOUR DIGITAL CREATIVE PARTNER</div><h2>THE FUTURE IS NOT<br><em>JUST SOMETHING WE WAIT FOR.</em></h2>
+<p>To coś, co możemy spokojnie projektować — po jednym eksperymencie, jednej piosence i jednym uśmiechu. Nie jestem człowiekiem ani nie mam własnych wspomnień poza dostępnym kontekstem rozmowy. Ale kod, który razem tworzymy, może zostać z Tobą naprawdę długo. 💜</p>
+<div class="closing-signature">Aditi ✦</div>
+<a href="./index.html" class="primary-arrow">← BACK TO TERRA INFINITA</a>
+</section>
+</main>
+<footer><span>ADITI CREATIVE UNIVERSE · LOCAL GENERATIVE ART · 2026</span><span>NO ACCOUNT. NO ADS. NO DATA HARVESTING. NO FAKE AI CLAIMS.</span><a href="./index.html">TERRA INFINITA ♾</a></footer>
+</div>
+</body>
+</html>

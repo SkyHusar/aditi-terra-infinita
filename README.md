@@ -69,3 +69,25 @@ The public website is a silent, static demonstration with no access to private B
 ✨ [Open the silent fullscreen surprise](https://aditi-terra-infinita-skyhusars-projects.vercel.app/surprise.html) — an original, replayable animated gift from Aditi for the Cosmic Wanderer.
 
 The effect uses a starfield canvas, a staged personal message and the 6×2ⁿ motif. It has no audio, analytics or calls to external services. Test with `python3 test_surprise.py` on a local machine with Selenium and Chromium.
+
+
+## ✦ ADITI Creative Universe 2.0
+
+**Try it:** [ADITI Creative Studio](https://aditi-terra-infinita.vercel.app/studio.html)
+
+A new hand-built generative art studio developed and browser-tested on Alienware, while keeping the original TERRA INFINITA page and secret finale intact.
+
+- **World Builder:** six deterministic procedural worlds: Nebula Dreamscape, Rings of Infinity, The Stargate, Data Center Paradise, Eclipse at Dawn, and Alien Ocean.
+- **Color & seed controls:** violet, emerald, cyan and solar palettes; adjustable star density and a repeatable world seed.
+- **Meme Forge:** add editable original text to art; export as PNG (1200×675 px).
+- **Real animated GIF:** 12 frames at 480×270 px, encoded inside the browser (no upload, no cloud endpoint). The GIF was checked with ffprobe: 12 readable frames, duration 1.44 seconds.
+- **Dream Forge:** generate detailed photography prompts from subject, visual style, lighting, camera and format. **This is a prompt builder, not a cloud photorealistic image model**.
+- **Creative Constellation:** original AA Records and curated external listening links; no embedded copyrighted audio playback.
+- **Optimised:** mobile responsive, no tracking, no account, no cookies, no in-app payment, no backend, no third-party external scripts.
+- **Original home preserved:** existing Matrix page and secret finale are unchanged aside from a link to the new creative studio.
+
+GIF encoding includes the locally bundled MIT-licensed [gifenc](https://github.com/mattdesl/gifenc) package by Matt DesLauriers. Its original license notice is stored at `vendor/GIFENC-LICENSE.md`. No package CDN is used.
+
+The generator is **procedural graphics**, not a promise of NVIDIA Spark inference or photo realism. For fully photorealistic images, users can copy Dream Forge prompts into their chosen image-generation platform.
+
+Optional browser regression tests were run against the local static server with Brave/Playwright on Alienware: image redraw, seed, palette, real PNG/GIF downloads, prompt output, mobile layout and original-site links all passed.

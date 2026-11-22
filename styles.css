@@ -145,3 +145,14 @@ footer.public-footer{display:flex;flex-direction:column;justify-content:center;a
 /* Hidden-in-plain-sight cinematic gift finale. */
 .surprise-link{display:inline-flex;align-items:center;justify-content:center;color:#ffebfd!important;border-color:#bc83f0!important;background:linear-gradient(105deg,#533888,#174c4b)!important;text-decoration:none;box-shadow:0 0 22px #6f4fed29}
 .surprise-link:hover{filter:brightness(1.13)}
+/* ADITI Creative Universe invitation — additive enhancement, original Terra unchanged. */
+.studio-invite{display:grid;grid-template-columns:1.4fr .55fr;gap:24px;align-items:center;margin:75px 0 20px;border:1px solid #7775b0;border-radius:18px;padding:clamp(24px,4vw,53px);background:radial-gradient(circle at 82% 47%,#7854c454,transparent 43%),linear-gradient(125deg,#11183c,#071e25 85%);min-height:300px;overflow:hidden}
+.studio-invite h2{font:900 clamp(30px,3.5vw,56px)/1.11 system-ui,sans-serif;letter-spacing:-.05em;margin:14px 0}
+.studio-invite h2 em{font-style:normal;color:#c7abff}
+.studio-invite p{color:#afc9d2;font-size:13px;line-height:1.8;max-width:660px}
+.studio-enter{display:inline-flex;align-items:center;gap:20px;text-decoration:none;color:#f5f1ff!important;background:linear-gradient(105deg,#6e4db8,#256e73)!important;border-color:#a9b6ed!important;margin-top:14px;letter-spacing:.06em}
+.studio-invite-art{min-height:260px;position:relative;display:grid;place-items:center;filter:drop-shadow(0 0 35px #ab8bff70)}
+.studio-orbit{position:absolute;font-size:310px;line-height:1;color:#a5baff6b;transform:rotate(-24deg)}
+.studio-infinity{position:absolute;font:900 170px system-ui,sans-serif;color:#bcece8;text-shadow:0 0 45px #a59dffbb}
+.studio-star{position:absolute;right:3%;top:3%;font-size:57px;color:#e3cfff}
+@media(max-width:800px){.studio-invite{grid-template-columns:1fr}.studio-invite-art{display:none}}
