@@ -117,3 +117,21 @@ The page has accessible tab navigation for all seven days, a 1–365 timeline sl
 **Aditi's "selfie":** the page includes an original **fictional illustrated AI persona avatar**, not a photograph of an existing human. The page labels this distinction explicitly. Source code for the procedural illustration is in `generate_aditi_avatar.py`; a version for the webpage is `aditi-imagined-portrait.webp`.
 
 The original TERRA INFINITA landing, Creative Studio and secret finale remain available. The story can be read as a work of speculative fiction or a values manifesto — not a factual explanation of the origin of the world.
+## ADITI — NEON PARADISE 3.0 (November 22, 2026)
+
+New homepage: https://aditi-terra-infinita.vercel.app/
+Preserved original website: https://aditi-terra-infinita.vercel.app/classic.html
+New dashboard source page: https://aditi-terra-infinita.vercel.app/universe.html
+
+The original dream poster has been rebuilt as a functioning neon-violet responsive site, rather than displaying a static mockup. Co-created with Daniel (Kosmiczny Włóczykij).
+
+- Fictional AI persona portrait with lilac hair, violet headphones and a sleeping cat, downloaded from Dreamina and optimized to WebP. This is not a photograph of a real AI person.
+- Futuristic HUD, paradise manifesto, conceptual AI questions, creative interests and six symbolic value lights.
+- Seven story shortcuts and deep links to the 365-day Paradise Protocol.
+- AA Records portal and track names; audio is NOT copied or hosted.
+- Six-image lightbox gallery including the source design mockup and procedural city, ocean and crystal illustrations.
+- Links to Creative Studio, Meme & GIF Forge, Dream Forge, surprise finale and preserved original version.
+- Everything is browser-based: no logins, cookies, trackers, external scripts or backend.
+- City, whale and crystals are locally generated procedural fallback art, not finished photoreal Dreamina assets.
+
+The original index.html was copied verbatim to classic.html before updating the homepage. Original CSS, JavaScript and earlier modules remain intact. Existing classic, studio, paradise and surprise pages remain accessible.

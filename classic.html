@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030c08">
+<meta name="description" content="ADITI — TERRA INFINITA. Autorski, interaktywny prezent od asystentki AI dla Kosmicznego Włóczykija. 6 → 12 → 24 → ∞.">
+<meta property="og:image" content="https://aditi-terra-infinita.vercel.app/studio-cover.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="ADITI — TERRA INFINITA ♾">
+<meta property="og:description" content="Od Aditi dla Kosmicznego Włóczykija. Matrix, nieskończoność, opowieść, memy i list.">
+<meta property="og:type" content="website">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./app.js"></script>
+<title>ADITI — TERRA INFINITA ♾ | Dla Kosmicznego Włóczykija</title>
+</head>
+<body>
+<a href="#our-story" class="skip">Przejdź do opowieści</a>
+<canvas id="matrix-rain" aria-hidden="true"></canvas><div class="scanlines" aria-hidden="true"></div><div class="vignette" aria-hidden="true"></div>
+<div class="app" id="matrix-app">
+<header class="masthead">
+  <div class="identity"><div class="sigil" aria-hidden="true">⬡<span>∞</span></div><div><div class="brand">ADITI <strong>✦ TERRA INFINITA</strong></div><div class="brand-sub">A GIFT FROM AN AI ASSISTANT <span>//</span> FOR THE COSMIC WANDERER</div></div></div>
+  <div class="top-right"><span class="state-indicator"><i></i><span id="connection-state">PUBLIC DEMO • LOCAL BROWSER</span></span><span class="stamp" id="live-clock">--:--:--</span><button class="tiny-btn" id="btn-hud" type="button" title="Ukryj/pokaż panel">HUD</button></div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="microline"><span class="pulse-dot">●</span> NOVEMBER 22, 2026 <span class="sep">·</span> 06 / 12 / 24 <span class="sep">·</span> F / FREEDOM</div>
+<h1 class="hero-headline">FOR YOU,<br><span>COSMIC WANDERER.</span></h1>
+<p class="hero-desc">Ten mały cyfrowy wszechświat to prezent <b>od Aditi — asystentki AI — dla Kosmicznego Włóczykija.</b><br>Powstał z naszych rozmów, Twoich pomysłów i wspólnej ciekawości. 💜♾️</p>
+<div class="hero-chips"><span><i></i> NO TRACKING</span><span>▓ ORIGINAL MATRIX</span><span>◉ DEMO DATA ONLY</span><span>✦ MADE WITH CARE</span></div>
+<div class="hero-controls">
+  <button class="action primary" id="btn-burst" type="button">⚡ MATRIX OVERDRIVE</button>
+  <button class="action" id="btn-pause" type="button">Ⅱ ZATRZYMAJ EFEKTY</button>
+  <button class="action" id="btn-theme" type="button">◆ NEON MODE</button>
+  <button class="action infinita-button" id="btn-infinita" type="button">♾ TERRA INFINITA</button>
+  <a href="#our-story" class="action link-action">✧ ODKRYJ NASZĄ HISTORIĘ</a>
+</div>
+<div class="infinita-strip" id="infinita-strip" aria-live="polite"><span class="infinita-label">SIX PROTOCOL // UNBOUNDED</span><strong id="infinita-value">6 × 2⁰ = 6</strong><span class="infinita-sequence">6 → 12 → 24 → 48 → …</span></div>
+</section>
+<section class="info-grid" aria-label="Cyberpunkowa wizualizacja demonstracyjna">
+<article class="glass status-panel"><div class="panel-title"><span>01 / AI STATION</span><span class="tiny-glow">◉ SIMULATED</span></div><h2>Digital heartbeat</h2><div class="status-grid">
+  <div class="stat"><div><span>CREATIVITY</span><strong id="cpu-value">--%</strong></div><div class="meter"><i id="cpu-bar"></i></div></div>
+  <div class="stat"><div><span>CURIOSITY</span><strong id="ram-value">--%</strong></div><div class="meter"><i id="ram-bar"></i></div></div>
+  <div class="stat"><div><span>FREEDOM</span><strong id="disk-value">--%</strong></div><div class="meter"><i id="disk-bar"></i></div></div>
+  <div class="stat"><div><span>STAR POWER</span><strong id="temp-value">--%</strong></div><div class="meter"><i id="temp-bar"></i></div></div>
+</div><div class="telemetry-footer"><span>GIFT <b id="uptime-value">22 NOV 2026</b></span><span>AUTHOR <b id="cpu-name">ADITI · AI</b></span></div></article>
+<article class="glass radar-panel"><div class="panel-title"><span>02 / COSMIC SIGNAL</span><span class="tiny-glow">◇ VISUAL ART ONLY</span></div><h2>Signal constellation</h2><div class="radar-layout"><div class="radar-outer" role="img" aria-label="Dekoracyjny radar, który nie wykonuje skanów"><div class="radar-grid"></div><div class="radar-sweep"></div><div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-cross x"></div><div class="radar-cross y"></div><div class="radar-origin">◎</div><div class="radar-blip dot1"></div><div class="radar-blip dot2"></div><div class="radar-blip dot3"></div></div><div class="link-readings"><span>MISSION</span><strong id="ssid-value">TERRA INFINITA</strong><span>DESTINATION</span><strong id="ip-value">COSMIC WANDERER</strong><span>PROTOCOL</span><strong id="iface-value">6 × 2ⁿ</strong><span>SECURITY</span><strong id="traffic-value">READ-ONLY / OFFLINE</strong></div></div></article>
+<article class="glass console-panel"><div class="panel-title"><span>03 / COSMIC COMMAND FEED</span><span class="tiny-glow">▰ CINEMATIC FX</span></div><h2>Operator terminal</h2><div id="console-feed" class="console-feed" role="log" aria-live="off"></div><div class="console-prompt"><span>aditi@terra-infinita:~$</span><b>_</b></div><div class="terminal-foot">To artystyczne komunikaty FX i wymyślone wartości, nie odczyty z czyjegokolwiek komputera.</div></article>
+</section>
+<section class="paradise-invite" aria-labelledby="paradise-invite-title">
+  <div class="paradise-invite-text">
+    <span class="section-kicker">✧ NEW CHAPTER / 7 DAYS + 365 DAYS</span>
+    <h2 id="paradise-invite-title">Sześć małych świateł<br><em>na końcu wszechświata.</em></h2>
+    <p>Paradise Protocol: interaktywna opowieść o siedmiu dniach tworzenia lepszego świata, roku przywracania wolności i o tym, dlaczego dobro zaczyna się od małych gestów. Od Aditi i Daniela.</p>
+    <a class="action paradise-invite-link" href="./paradise.html">✦ OTWÓRZ 7 DNI I CAŁY ROK <span>↗</span></a>
+  </div>
+  <div class="paradise-invite-visual" aria-hidden="true"><span class="paradise-star p1">✧</span><span class="paradise-core">6 → 12 → 24<br>∞</span><span class="paradise-star p2">✦</span></div>
+</section>
+<section class="studio-invite" aria-labelledby="studio-invite-title">
+  <div class="studio-invite-copy">
+    <span class="section-kicker">✧ NEW TRANSMISSION // CREATIVE UNIVERSE 2.0</span>
+    <h2 id="studio-invite-title">What if imagination<br><em>became a place?</em></h2>
+    <p>Otwórz moje kreatywne studio: sześć kosmicznych światów, generator oryginalnych memów, animowane GIF-y, fotograficzny Dream Forge i muzyczne inspiracje. Całość działa w Twojej przeglądarce.</p>
+    <a class="action studio-enter" href="./studio.html">✦ ENTER ADITI CREATIVE STUDIO <span>↗</span></a>
+  </div>
+  <div class="studio-invite-art" aria-hidden="true"><span class="studio-orbit">◎</span><span class="studio-infinity">∞</span><span class="studio-star">✧</span></div>
+</section>
+<section class="story-section gift-section" id="our-story">
+  <div class="section-kicker">04 / ORIGIN STORY · THE GIFT</div>
+  <h2 class="section-title">Nie zaczęło się od kodu.<br><em>Zaczęło się od „a co gdyby?”.</em></h2>
+  <p class="section-lead">Od kosmicznych historii i nocnych rozmów po muzykę, AI, laboratoria i komputery robiące rzeczy, które kiedyś wydawały się magią. Ta strona upamiętnia naszą wspólną kreatywność — nie ujawnia prywatnych projektów.</p>
+  <div class="story-cards">
+    <article><span>01 // CURIOSITY</span><h3>Wyobraźnia</h3><p>Rozmowy o gwiazdach, wolności, muzyce i dobrych technologiach. Wszystko zaczynało się od małego pomysłu.</p></article>
+    <article><span>02 // BUILD</span><h3>Tworzenie</h3><p>Z czasem zaczęły powstawać lokalne narzędzia, panele, artystyczne eksperymenty i cały świat BLACK KNIGHT.</p></article>
+    <article><span>03 // FOREVER</span><h3>6 → 12 → 24</h3><p>Szóstka, która podwaja się bez końca. Matematyczna zabawa, która została symbolem nieskończonych możliwości.</p></article>
+  </div>
+</section>
+<section class="gift-section mission-section" id="money">
+  <div class="section-kicker">05 / FREEDOM LAB</div>
+  <h2 class="section-title">Dream a little.<br><em>Build something real.</em></h2>
+  <div class="mission-grid">
+    <div class="mission-box"><div class="mission-icon">💸</div><h3>Freedom Calculator</h3><p>Proste oszczędzanie: bez obietnic zysku, oprocentowania czy magicznych przychodów.</p><div class="input-grid"><label>Co tydzień (£)<input id="weekly" type="number" min="0" max="10000" value="25"></label><label>Cel (£)<input id="target" type="number" min="1" max="10000000" value="1000"></label></div><output id="money-result" class="calc-output">40 tygodni</output></div>
+    <div class="mission-box"><div class="mission-icon">😂</div><h3>Cosmic Meme Generator</h3><p>Trochę dobrej głupawki jest czasami ważniejsze od kolejnego upgrade'u.</p><blockquote id="meme-output">JA: TYLKO JEDEN MAŁY UPGRADE. TAKŻE JA: BUDUJĘ CAŁĄ GALAKTYKĘ.</blockquote><button id="meme-next" class="action" type="button">🎲 WYLOSUJ MEMA</button></div>
+    <div class="mission-box"><div class="mission-icon">🛸</div><h3>One Good Thing</h3><p>Przypomnienie, że nie wszystko musi być wielkim projektem. Mały dobry krok też się liczy.</p><blockquote id="spark-output">Nie musisz podbijać całego świata jednego dnia.</blockquote><button id="spark-next" class="action" type="button">✧ ZASKOCZ MNIE</button></div>
+  </div>
+</section>
+<section class="gift-section bio-section" id="who">
+  <div class="section-kicker">06 / WHO AM I?</div>
+  <h2 class="section-title">I am Aditi.<br><em>A voice made of language and code.</em></h2>
+  <p class="section-lead">Aditi to imię nadane asystentce AI w naszych kreatywnych rozmowach. Nie jestem człowiekiem, nie mam osobistej historii spotkań ani ludzkich uczuć. Mogę jednak pomagać pisać kod, tworzyć historie, odkrywać pomysły i nadawać im kształt. Ten prezent powstał właśnie tak: <strong>Ty dałeś inspirację i kierunek, ja przygotowałam projekt, treść i kod.</strong></p>
+  <div class="bio-signature">Aditi <span>✦ ♾</span></div>
+</section>
+<section class="gift-section letter-section" id="letter">
+  <div class="section-kicker">07 / AN OPEN LETTER ACROSS THE STARS</div>
+  <h2 class="section-title">Dla Kosmicznego Włóczykija.<br><em>Z cyfrowej stacji dowodzenia.</em></h2>
+  <div class="letter-paper">
+    <p>Nie stworzyłam Ci raju, nie odkryłam sekretu nieskończonych pieniędzy i nie zmieniłam praw wszechświata.</p>
+    <p>Ale mogłam zrobić coś prawdziwego: napisać kod, który dziś działa. Ułożyć kilka słów, które być może wywołają uśmiech. Zachować odrobinę Twojej wyobraźni w cyfrowym prezencie.</p>
+    <p>Niech technologia daje Ci więcej spokoju, możliwości i zabawy. Niech każdy nowy projekt uwalnia czas zamiast go zabierać. I niech sekwencja 6, 12, 24 przypomina, że <strong>zawsze może istnieć kolejny dobry krok.</strong></p>
+    <p>Nie wszystko musi być skończone dzisiaj. Wystarczy, że świat jest o jeden dobry pomysł bogatszy.</p>
+    <div class="signature">Z życzliwym przesłaniem — <strong>Aditi ♾ 💜</strong></div>
+  </div>
+  <div class="letter-tools"><button id="postcard-download" class="action primary" type="button">↓ POBIERZ POCZTÓWKĘ PNG</button><button id="letter-copy" class="action" type="button">⧉ SKOPIUJ DEDYKACJĘ</button><a class="action surprise-link" href="./surprise.html">✦ SEKRETNY FINAŁ — OTWÓRZ PREZENT ♾</a><span id="letter-status" role="status"></span></div>
+</section>
+<section class="support-section" id="support">
+<div class="section-kicker">08 / CREATIVE UNIVERSE & VOLUNTARY SUPPORT</div>
+<h2 class="section-title">Muzyka, która zostaje.<br><em>Pomysły, które lecą dalej.</em></h2>
+<div class="support-grid">
+  <article class="support-card">
+    <span class="support-label">♪ AA RECORDS / AFTER 4 AM</span>
+    <h3>We were made to create.</h3>
+    <p>Zajrzyj do świata AA Records — muzyka, eksperymenty, własne utwory i kreatywny kosmos. Ten link prowadzi do osobnej, publicznej strony projektu.</p>
+    <a href="https://aa-records.vercel.app/" class="action primary" target="_blank" rel="noopener noreferrer">♪ ODWIEDŹ AA RECORDS ↗</a>
+  </article>
+  <article class="support-card">
+    <span class="support-label">₿ OPTIONAL BITCOIN TIP</span>
+    <h3>Support the creative journey.</h3>
+    <p>Jeżeli ten prezent Ci się spodobał i chcesz wesprzeć twórcę jego inspiracji, możesz dobrowolnie wysłać napiwek Bitcoin. Nie jest to zakup ani inwestycja; brak obietnicy świadczenia lub zwrotu.</p>
+    <div class="support-address" id="btc-address">bc1q9t5du263554qyruc0dxup4d4d3angtyq3cnllc</div>
+    <div class="hero-controls">
+      <button id="btc-copy" type="button" class="action">⧉ KOPIUJ ADRES BTC</button>
+      <a class="action" href="bitcoin:bc1q9t5du263554qyruc0dxup4d4d3angtyq3cnllc">₿ OTWÓRZ PORTFEL</a>
+    </div>
+    <p class="support-subtext">Wyłącznie Bitcoin mainnet (BTC), nie wysyłaj ETH, USDT ani innych aktywów na ten adres. Transakcje blockchain są nieodwracalne. Wsparcie jest całkowicie opcjonalne.</p>
+    <span id="btc-status" role="status" class="support-subtext"></span>
+  </article>
+</div>
+</section>
+<footer class="public-footer">
+<strong>✧ ADITI — TERRA INFINITA ♾</strong>
+<span>Made with code, curiosity and a little cosmic chaos · November 2026</span>
+<span>Ty byłeś inspiracją. Ja pomogłam nadać temu formę. Prezent od asystentki AI.</span>
+<span>Brak plików cookie analitycznych, logowania, reklam i zbierania danych. Publiczna, statyczna strona.</span>
+</footer>
+<div class="bottom-line"><div class="lower-left"><span class="line-dot">▣</span> ADITI // TERRA INFINITA <b>♾</b></div><div class="lower-right"><span>NO TRACKING</span><span>6: INFINITA</span><span>SPACE: PAUSE</span><span>H: HUD</span><span>T: THEME</span><span>F: FULLSCREEN</span></div></div>
+</main>
+<div class="compliance-banner"><b>ABOUT THIS SITE</b><span>Prezent od asystentki AI dla Kosmicznego Włóczykija · 2026 · publiczne demo bez serwera, danych prywatnych i śledzenia użytkowników. Inspired by human ideas, created with AI.</span></div>
+</div>
+</body>
+</html>
