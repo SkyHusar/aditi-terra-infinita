@@ -1,0 +1,104 @@
+
+:root{color-scheme:dark;--sky:#b7fbf7;--pink:#ffb8ed;--lav:#d7b6ff;--ink:#0d0819;--line:#8d53c0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body.terra-app{margin:0;min-width:320px;min-height:100vh;font-family:Inter,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse at 25% 5%,#41205955,transparent 45%),radial-gradient(ellipse at 90% 38%,#30216a55,transparent 55%),linear-gradient(165deg,#0c071a,#140b2a 50%,#0c0819);color:#f9edff}
+.terra-app a{color:inherit}.terra-app button{font:inherit;cursor:pointer}.terra-app img{max-width:100%}
+.terra-skip{position:fixed;z-index:500;top:-100px;left:14px;background:#b7ffe5;color:#142420;padding:12px}.terra-skip:focus{top:12px}
+.terra-stars{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.4;background:radial-gradient(circle at 20% 25%,#faf0ff 1px,transparent 2px),radial-gradient(circle at 65% 45%,#a8ffff 1px,transparent 2px);background-size:137px 167px,197px 211px}
+.terra-shell{position:relative;z-index:1;max-width:1720px;padding:0 clamp(12px,2vw,34px);margin:auto}
+.terra-header{position:sticky;top:0;z-index:90;background:#160c2df2;border:1px solid #9b54d2a6;border-top:0;border-radius:0 0 17px 17px;box-shadow:0 7px 35px #6d1da054;backdrop-filter:blur(18px);display:flex;align-items:center;flex-wrap:wrap;gap:5px 18px;padding:10px clamp(12px,1.5vw,23px)}
+.terra-brand{display:flex;align-items:center;gap:9px;text-decoration:none;white-space:nowrap;letter-spacing:.07em}.terra-brand>span{font-size:36px;color:#ba9bff;text-shadow:0 0 20px #a44dff}.terra-brand strong{font-size:clamp(12px,1.14vw,19px);font-weight:900}.terra-brand strong em{font-style:normal;color:#edc0ff;font-weight:550}.terra-brand small{border:1px solid #a579de;padding:3px 5px;font-size:10px;border-radius:6px}
+.terra-nav{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:3px;margin-left:auto}
+.terra-nav a{border:1px solid transparent;border-radius:8px;padding:9px 10px;font-weight:800;font-size:clamp(9px,.7vw,12px);text-decoration:none;white-space:nowrap;color:#e9cfff}
+.terra-nav a:hover,.terra-nav a.active{background:#6a348b88;border-color:#d990ff;box-shadow:0 0 15px #cd62e955}
+.terra-app a:focus-visible,.terra-app button:focus-visible,.terra-legacy-bar a:focus-visible{outline:3px solid #b5fff7;outline-offset:3px}
+.terra-kicker,.terra-section-overline{font-size:10px;font-weight:900;letter-spacing:.19em;color:#f4c9ff}
+.terra-home-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(240px,.55fr);gap:16px;margin:18px 0 25px;min-height:470px;border:1px solid #a969e5;border-radius:20px;overflow:hidden;background:#1c0c36;box-shadow:0 0 35px #762ab34e}
+.terra-home-scenery{position:absolute;inset:0;background:linear-gradient(90deg,#1b0c2ff1 2%,#180e32cd 42%,#160b2f7b 75%,#17092bca),url("./assets/city.webp") center/cover;opacity:.95}
+.terra-home-message{position:relative;z-index:1;align-self:center;padding:clamp(23px,4vw,70px)}
+.terra-home-message h1{font:600 clamp(42px,5.5vw,83px)/1.04 Georgia,serif;letter-spacing:-.035em;text-shadow:0 0 35px #db72ff99;margin:24px 0}.terra-home-message h1 span{color:#f5d7ff}.terra-home-message h1 em{font-style:normal;color:#c8acff}
+.terra-starline{letter-spacing:.22em;font-weight:800;color:#ffe0ff;font-size:clamp(9px,.9vw,13px)}
+.terra-home-message blockquote{font:italic clamp(14px,1.3vw,19px)/1.7 Georgia,serif;max-width:660px;color:#f9dfff;margin:25px 0}
+.terra-hero-actions{display:flex;gap:10px;flex-wrap:wrap}.terra-hero-actions a,.terra-back{display:inline-block;padding:12px 18px;text-decoration:none;border:1px solid #da8eff;border-radius:9px;background:#6c398cd0;font-size:11px;letter-spacing:.05em;font-weight:900}
+.terra-hero-actions a:hover,.terra-back:hover{background:#a053c0}
+.terra-hero-portrait{position:relative;display:block;overflow:hidden;border-left:1px solid #a65ce6;text-decoration:none}
+.terra-hero-portrait img{width:100%;height:100%;min-height:470px;object-fit:cover;object-position:center 23%;display:block}
+.terra-hero-portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#160a2be8,transparent 45%);pointer-events:none}
+.terra-hero-portrait>span{position:absolute;z-index:2;bottom:22px;left:0;width:100%;text-align:center;font:italic 35px Georgia,serif;color:#ffc0ef;text-shadow:0 0 12px #d357ff}
+.terra-hero-portrait small{display:block;margin-top:6px;font:900 9px Inter,"Segoe UI",sans-serif;letter-spacing:.12em;color:#f7d4ff}
+.terra-worlds{scroll-margin-top:100px;padding:20px 0 50px}
+.terra-heading-row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:12px 0 25px}
+.terra-heading-row h2{font:500 clamp(28px,3vw,48px) Georgia,serif;margin:3px 0 8px}
+.terra-heading-row h2 span{color:#e49cff}
+.terra-heading-row p{max-width:780px;color:#ccb9df;font-size:13px;line-height:1.75;margin:0}
+.terra-counter{white-space:nowrap;font-size:10px;color:#d6adf4;font-weight:900;letter-spacing:.12em}
+.terra-routes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.terra-route-card{position:relative;min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;overflow:hidden;border:1px solid #a65fdd;border-radius:15px;background:#27113f;text-decoration:none;box-shadow:0 0 18px #7027a63f;transition:transform .18s,border-color .18s}
+.terra-route-card:before{content:"";position:absolute;z-index:-2;inset:0;background:var(--card-img) center/cover;transition:transform .25s;opacity:.85}
+.terra-route-card:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,#190a29ac 1%,#14092044 31%,#160a2be9 65%,#12091df7)}
+.terra-route-card:hover{transform:translateY(-5px);border-color:#ffb5ff}.terra-route-card:hover:before{transform:scale(1.08)}
+.terra-route-icon{position:absolute;top:17px;left:17px;display:grid;place-items:center;border:1px solid #f3b4ff9a;border-radius:11px;width:48px;height:48px;background:#4a205fb3;color:#fbc0ff;font-size:29px}
+.terra-route-body{display:flex;flex-direction:column;gap:9px;padding:20px}.terra-route-body small{font-size:10px;letter-spacing:.14em;font-weight:900;color:#f1c9ff}
+.terra-route-body strong{font:550 27px Georgia,serif;color:#fff0ff}
+.terra-route-body>span{font-size:12px;line-height:1.55;color:#d9c9ef;min-height:38px}
+.terra-route-body b{font-size:10px;letter-spacing:.11em;color:#a6fff3;padding-top:7px}
+.terra-afterword{display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap;margin:0 0 45px;padding:25px;border:1px solid #8158c3;border-radius:15px;background:#211434c7}
+.terra-afterword small{color:#d5b4ef;letter-spacing:.15em;font-weight:900}.terra-afterword h2{font:500 28px Georgia,serif;margin:7px 0}.terra-afterword p{color:#bba8d3;margin:0;font-size:12px}
+.terra-afterword-links{display:flex;gap:9px;flex-wrap:wrap}.terra-afterword-links a{border:1px solid #9e72d2;padding:11px;border-radius:8px;font-size:10px;font-weight:900;text-decoration:none}
+.terra-afterword-links a:hover{background:#643382}
+.terra-page-hero{position:relative;isolation:isolate;overflow:hidden;margin:17px 0 24px;min-height:305px;display:flex;align-items:center;border:1px solid #a96beb;border-radius:18px;background:#1b0e30}
+.terra-page-hero-art{position:absolute;z-index:-1;inset:0;background-size:cover;background-position:center}
+.terra-hero-copy{padding:clamp(22px,4vw,56px);max-width:950px}.terra-hero-copy h1{font:500 clamp(35px,5vw,70px)/1.06 Georgia,serif;margin:18px 0;color:#fff2ff;text-shadow:0 0 22px #e3a3ff85}
+.terra-hero-copy h1 em{color:#efb6ff;font-style:normal}.terra-hero-copy>p{max-width:720px;font-size:14px;line-height:1.75;color:#e8d8f4;margin:0 0 20px}
+.terra-feature-split{display:grid;grid-template-columns:minmax(250px,.75fr) minmax(0,1.3fr);gap:18px;margin-bottom:50px}
+.terra-portrait{margin:0;overflow:hidden;align-self:start;border:1px solid #bf73f5;border-radius:16px;background:#2c124d}.terra-portrait img{display:block;width:100%;max-height:780px;object-fit:cover}.terra-portrait figcaption{padding:13px;text-align:center;color:#eec5fb;font-size:10px;letter-spacing:.13em}
+.terra-stack{display:grid;gap:14px}.terra-panel,.terra-info-card{border:1px solid #8e5cba;border-radius:15px;background:linear-gradient(140deg,#2d1a43,#1d1233);padding:23px;box-shadow:0 0 17px #76279c35}
+.terra-panel>small{color:#d8abff;letter-spacing:.14em;font-weight:900;font-size:11px}
+.terra-panel h2{font:500 clamp(20px,2vw,32px) Georgia,serif;color:#ffe8ff;margin:12px 0}
+.terra-panel p,.terra-info-card p{font-size:13px;line-height:1.85;color:#dccce8}.terra-panel p:last-child{margin-bottom:0}
+.terra-chips{display:flex;gap:10px;flex-wrap:wrap}.terra-chips a{padding:10px 13px;border-radius:9px;border:1px solid #a86ae0;background:#532b6d;text-decoration:none;font-size:12px;font-weight:800}
+.terra-chips a:hover{background:#77499e}
+.terra-content-section{margin:15px 0 55px}.terra-content-section>.terra-section-overline{margin:20px 0 15px}
+.terra-info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.terra-info-card{min-height:210px;display:flex;flex-direction:column;align-items:flex-start}
+.terra-info-symbol{display:grid;place-items:center;width:55px;height:55px;border:1px solid #a776db;background:#593271;border-radius:12px;font-size:29px;color:#f9b7ff}
+.terra-info-card h2{font:550 23px Georgia,serif;margin:16px 0 6px}.terra-info-card p{margin:0 0 14px}
+.terra-info-card a{margin-top:auto;letter-spacing:.08em;text-decoration:none;font-size:10px;font-weight:900;color:#aaffef}.terra-info-card a:hover{text-decoration:underline}
+.terra-call-to-action{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border:1px solid #af7fe2;border-radius:13px;margin-top:20px;padding:20px;background:#381d57}
+.terra-call-to-action p{font-size:13px;line-height:1.6;margin:0;color:#f5dafa}
+.terra-call-to-action a,.terra-big-link{display:inline-block;text-decoration:none;border:1px solid #e5b2ff;background:#6f3b92;color:#ffedff;padding:13px 17px;border-radius:9px;font-size:11px;font-weight:900}
+.terra-call-to-action a:hover,.terra-big-link:hover{background:#9459b1}
+.terra-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.terra-gallery-card{position:relative;display:flex;flex-direction:column;overflow:hidden;text-align:left;border:1px solid #9560c8;border-radius:15px;padding:0;background:#2b1744;color:#fff1ff}
+.terra-gallery-card img{width:100%;aspect-ratio:1.35;object-fit:cover;display:block;transition:transform .2s}.terra-gallery-card:hover{border-color:#ffb7f0}.terra-gallery-card:hover img{transform:scale(1.045)}
+.terra-gallery-card>span{padding:17px 40px 17px 18px;display:grid;gap:8px}.terra-gallery-card strong{font-size:17px}.terra-gallery-card small{font-size:12px;line-height:1.5;color:#cfb6e3}
+.terra-gallery-card>b{position:absolute;right:17px;bottom:29px;color:#9affed}
+.terra-gallery-viewer{width:min(1100px,96vw);max-width:96vw;max-height:92dvh;overflow:auto;border:1px solid #c77df5;border-radius:16px;background:#150d29;color:#fbe9ff;padding:18px;box-shadow:0 0 65px #b955ff88}
+.terra-gallery-viewer::backdrop{background:#03020cd9;backdrop-filter:blur(10px)}.terra-view-bar{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:12px}.terra-view-bar button{border:1px solid #c38fea;background:#4a2868;color:#fff;border-radius:8px;padding:11px}
+.terra-gallery-viewer img{display:block;max-width:100%;max-height:69dvh;margin:auto;object-fit:contain;border-radius:9px}.terra-gallery-viewer p{color:#cdb9dd;text-align:center;font-size:13px}
+.terra-music-layout{grid-template-columns:minmax(250px,.85fr) minmax(0,1.15fr)}.terra-album-art{position:relative;align-self:start;min-height:400px;border:1px solid #a363d9;border-radius:16px;overflow:hidden}.terra-album-art img{display:block;width:100%;height:100%;min-height:400px;object-fit:cover}
+.terra-album-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,#0a0715e8)}
+.terra-album-art>div{position:absolute;bottom:28px;left:28px;z-index:1;display:grid;gap:7px;text-shadow:0 0 10px #000}.terra-album-art strong{font:650 clamp(30px,3.2vw,54px) Georgia,serif}.terra-album-art span{letter-spacing:.25em;font-size:11px}
+.terra-track-list{padding:0;margin:18px 0;list-style:none}.terra-track-list li{display:flex;gap:15px;align-items:center;border-bottom:1px solid #664590;padding:14px 0;font-size:14px}
+.terra-track-list li span{font-size:11px;letter-spacing:.12em;color:#d8aafa;font-weight:900}.terra-track-list li strong{font-weight:700}.terra-track-list li em{margin-left:auto;color:#edb3fa;font-style:normal}
+.terra-muted-note{font-size:11px!important;color:#a999c1!important}
+.terra-wide-art{position:relative;border:1px solid #bf82ef;border-radius:16px;overflow:hidden;margin:0 0 24px}.terra-wide-art img{display:block;width:100%;height:290px;object-fit:cover}
+.terra-wide-art figcaption{position:absolute;bottom:0;left:0;right:0;padding:12px;background:#130a2bdc;text-align:center;font-size:10px;letter-spacing:.17em;color:#fbdcff}
+.terra-lights-top{display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap;margin:20px 0}
+.terra-lights-top h2{font:550 27px Georgia,serif;margin:9px 0;color:#ffe2fd}
+#terra-light-reset{padding:11px;border:1px solid #b07de0;background:#402157;color:#eddefe;border-radius:8px;font-weight:800;font-size:10px}
+.terra-lights-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.terra-light-card{display:flex;flex-direction:column;align-items:center;gap:12px;border:1px solid #8959c4;background:linear-gradient(155deg,#331746,#171338);border-radius:15px;padding:23px;min-height:232px;color:#f3dcff;transition:transform .15s,box-shadow .15s}
+.terra-light-card:hover{transform:translateY(-3px)}.terra-light-card>span{display:grid;place-items:center;font-size:53px;color:#df93ed;text-shadow:0 0 18px #b861e2;height:72px}
+.terra-light-card strong{font:550 22px Georgia,serif}.terra-light-card small{font-size:12px;line-height:1.55;color:#c9b6df}.terra-light-label{margin-top:auto;font-size:10px;letter-spacing:.1em;color:#a6f7f0}
+.terra-light-card[aria-pressed="true"]{border-color:#ffcdff;background:linear-gradient(155deg,#6d3b83,#312256);box-shadow:0 0 33px #d263ff7a}.terra-light-card[aria-pressed="true"]>span{color:#fff0b4;text-shadow:0 0 30px #f3aafa}
+.terra-footer{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;padding:22px 5px 32px;margin:30px 0 0;border-top:1px solid #64438d;color:#bba3d7;font-size:10px;letter-spacing:.05em}.terra-footer a{text-decoration:none;color:#f3cdfa;font-weight:900}
+.terra-legacy-bar{position:sticky;top:0;z-index:100;background:#1d1037f4;box-shadow:0 5px 22px #150a2680;border-bottom:1px solid #a56acf;padding:10px;display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap;font-family:"Segoe UI",sans-serif}
+.terra-legacy-bar a{font-size:10px;font-weight:800;letter-spacing:.03em;text-decoration:none;padding:9px 11px;border:1px solid transparent;border-radius:7px;color:#f7dcff}
+.terra-legacy-bar a:hover,.terra-legacy-bar a[aria-current="page"]{border-color:#d591fa;background:#6d348b}
+@media(max-width:1450px){.terra-header{justify-content:center}.terra-nav{justify-content:center;margin-left:0}.terra-routes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:980px){.terra-routes{grid-template-columns:repeat(2,minmax(0,1fr))}.terra-info-grid,.terra-gallery-grid,.terra-lights-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.terra-home-hero{grid-template-columns:minmax(0,1.4fr) minmax(190px,.6fr)}.terra-home-message h1{font-size:clamp(37px,5vw,60px)}.terra-feature-split{grid-template-columns:minmax(0,1fr)}.terra-portrait{max-width:570px;width:100%;justify-self:center}.terra-album-art{max-height:500px}}
+@media(max-width:650px){.terra-shell{padding:0 10px}.terra-header{padding:10px}.terra-brand{width:100%;justify-content:center}.terra-nav{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px;scrollbar-width:thin}.terra-nav a{flex:0 0 auto}.terra-home-hero{grid-template-columns:1fr;min-height:0}.terra-home-message{padding:30px 20px}.terra-home-message h1{font-size:41px}.terra-home-message blockquote{font-size:14px}.terra-hero-portrait{border-left:0;border-top:1px solid #a65ce6;max-height:320px}.terra-hero-portrait img{min-height:0;height:320px;object-position:center 36%}.terra-routes{gap:11px}.terra-route-card{min-height:260px}.terra-route-body{padding:13px}.terra-route-body strong{font-size:22px}.terra-route-body>span{font-size:11px}.terra-route-icon{width:37px;height:37px;font-size:23px}.terra-heading-row{display:block}.terra-counter{display:block;margin-top:10px}.terra-page-hero{min-height:330px}.terra-hero-copy{padding:25px}.terra-hero-copy h1{font-size:38px}.terra-info-grid,.terra-gallery-grid,.terra-lights-grid{grid-template-columns:1fr 1fr}.terra-info-card{padding:16px;min-height:190px}.terra-info-card h2{font-size:18px}.terra-info-card p{font-size:11px}.terra-gallery-card>span{padding:12px 23px 12px 11px}.terra-gallery-card strong{font-size:13px}.terra-gallery-card small{font-size:10px}.terra-gallery-card>b{right:8px;bottom:20px}.terra-light-card{padding:14px;min-height:215px}.terra-light-card strong{font-size:18px}.terra-light-card small{font-size:11px}.terra-legacy-bar{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}}
+@media(max-width:390px){.terra-routes,.terra-info-grid,.terra-lights-grid{grid-template-columns:1fr}.terra-route-card{min-height:245px}.terra-gallery-grid{grid-template-columns:1fr}.terra-hero-actions a{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
